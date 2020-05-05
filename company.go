@@ -7,24 +7,33 @@ import (
 
 // Company data structure for companies
 type Company struct {
-	Address           string   `json:"address"`
-	City              string   `json:"city"`
-	Country           string   `json:"country"`
-	Currency          string   `json:"currency"`
-	CUSIP             string   `json:"cusip"`
-	Description       string   `json:"description"`
-	Exchange          string   `json:"exchange"`
-	GICSIndustryGroup string   `json:"ggroup"`
-	GICSIndustry      string   `json:"gind"`
-	GICSSector        string   `json:"gsector"`
-	GICSSubIndustry   string   `json:"gsubind"`
-	ISIN              string   `json:"isin"`
-	NAICS             string   `json:"naics"`
-	Name              string   `json:"name"`
-	Phone             string   `json:"phone"`
-	State             string   `json:"state"`
-	Ticker            string   `json:"ticker"`
-	WebURL            *url.URL `json:"weburl"`
+	Address               string   `json:"address"`
+	City                  string   `json:"city"`
+	Country               string   `json:"country"`
+	Currency              string   `json:"currency"`
+	CUSIP                 string   `json:"cusip"`
+	Description           string   `json:"description"`
+	Exchange              string   `json:"exchange"`
+	GICSIndustryGroup     string   `json:"ggroup"`
+	GICSIndustry          string   `json:"gind"`
+	GICSSector            string   `json:"gsector"`
+	GICSSubIndustry       string   `json:"gsubind"`
+	ISIN                  string   `json:"isin"`
+	NAICS                 string   `json:"naics"`
+	Name                  string   `json:"name"`
+	Phone                 string   `json:"phone"`
+	State                 string   `json:"state"`
+	Ticker                string   `json:"ticker"`
+	WebURL                *url.URL `json:"weburl"`
+	Symbol                string   `json:"symbol"`
+	SEDOL                 string   `json:"sedol"`
+	IPO                   *string  `json:"ipo"`
+	Employees             int      `json:"employees"`
+	MarketCap             int      `json:"market_cap"`
+	SharesOutstanding     int      `json:"shares_outstanding"`
+	NAICSNationalIndustry string   `json:"naics_industry"`
+	NAICSSector           string   `json:"naics_sector"`
+	NAICSSubsector        string   `json:"naics_subsector"`
 }
 
 // UnmarshalJSON decodes the json data
